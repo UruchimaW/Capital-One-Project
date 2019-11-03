@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/static/script.js"></script>
+
+     <title>Jeapordy! Search</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Jeapordy! Search</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/aboutus">About Us</a>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid" style="background:rgb(55, 81, 218);height:100vh;">
+      <div class="row" style="height:100vh;">
+        <div class="col align-self-center" data-aos="fade" data-aos-duration="1400" style="text-align:center;color:white;">
+          <div class="row">
+            <div class="col">
+              <h1 id="pi_numbers"> Time to see some Jeapordy!</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <form class="form-inline">
+      <div class="form-group mb-2">
+        <label for="staticEmail2" class="sr-only">Email</label>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input class="form-control" id="inputPassword2" placeholder="Search Categories">
+      </div>
+      <button class="btn btn-primary mb-2">Search</button>
+    </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-fluid">
+  <div class="row" style="height:100vh">
+    <div class="col align-self-center">
+      <div class="row">
+        <div class="col" style="text-align:center;">
+          <h1 style="color:black;">Find Something Random</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align:center">
+          <button type="button" id="randomFinder" class="btn btn-primary">Just Click Here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col align-self-center">
+      <div class="row">
+        <div class="col">
+          <p id="category"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="question"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="answer"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="airdate"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid" style="background:black;">
+      <div class="row" style="height:100vh">
+        <div class="col">
+          <div id="allQuestions" style="background:black;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
